@@ -1,0 +1,667 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body, 
+html {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  max-width: 100%; /* Set a maximum width for the entire page */
+  margin: 0 auto; /* Center the page content horizontally */
+  overflow-x: hidden; /* Hide horizontal overflow if necessary */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* property-details */
+
+
+
+
+
+
+/* Property details page section styles */
+.property-details-page {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Section 1 styles */
+#section1 {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.property-details-title {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.property-details-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.property-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.property-actions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.property-actions button {
+  margin-left: 12px;
+}
+
+
+.property-actions button {
+  background-color: #ff0800;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.property-actions button i {
+  margin-right: 5px;
+}
+
+.property-actions button:hover {
+  background-color: #ff2800;
+}
+
+/* Section 2 styles */
+#section2 {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.property-tabs {
+  text-align: center;
+}
+
+.property-tabs .tab {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.property-tabs .tab button.tablinks {
+  background-color: #002147;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.property-tabs .tab button.tablinks.active {
+  background-color: #002387;
+}
+
+.property-tabs .tab button.tablinks:hover {
+  background-color: #002387;
+}
+
+.property-tabs .tabcontent {
+  display: none;
+}
+
+.property-tabs .tabcontent.active {
+  display: block;
+}
+
+.overview-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.overview-table tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.overview-table td {
+  padding: 10px;
+}
+
+.overview-table i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #007bff;
+}
+
+.overview-table td:last-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.property-tabs .tabcontent p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.property-tabs .tabcontent ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.property-tabs .tabcontent ul li {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Section 4 styles */
+#section4 {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.property-tabs2 {
+  text-align: center;
+}
+
+.property-tabs2 .tab2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.property-tabs2 .tab2 button.tablinks {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.property-tabs2 .tab2 button.tablinks.active {
+  background-color: #0056b3;
+}
+
+.property-tabs2 .tab2 button.tablinks:hover {
+  background-color: #0056b3;
+}
+
+.property-tabs2 .tabcontent {
+  display: none;
+}
+
+#google-map {
+  width: 100%;
+  height: 300px;
+}
+
+.property-blueprint img {
+  max-width: 100%;
+}
+
+/* Section 5 styles */
+#section5 {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.book-visit h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.book-visit form {
+  margin-top: 10px;
+}
+
+.book-visit button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-visit button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Style for the Amenities tab */
+#amenities {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#amenities h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.amenity {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.amenity i {
+  font-size: 20px;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+
+/* Style for the Surroundings tab */
+#surroundings {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#surroundings h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.surroundings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Gap between surroundings */
+}
+
+.surrounding {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.surrounding i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.surrounding p {
+  font-size: 16px;
+  color: #555;
+}
+
+.surrounding:hover {
+  transform: scale(1.05);
+}
+
+/* Style for the "Property About" section */
+#about {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#about h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+#about p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+#about ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#about ul li {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Style for key feature bullets (disc icons) */
+#about ul li::before {
+  content: '\2022'; /* Bullet character */
+  color: #007bff; /* Bullet color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Style for the "Google Maps" tab content */
+#google-maps {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#google-maps h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+/* Example Google Maps container */
+#google-map {
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Style for Property Blueprint tab */
+#property-blueprint {
+  padding: 20px;
+}
+
+#property-blueprint h2 {
+  font-size: 24px;
+}
+
+#property-blueprint img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.property-features {
+  margin-top: 20px;
+}
+
+.property-features h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.property-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.property-details .property-type,
+.property-details .property-size {
+  display: inline-block;
+}
+
+.property-details .property-type span,
+.property-details .property-size span {
+  font-size: 16px;
+  color: #555;
+  margin-right: 10px;
+}
+
+.property-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.property-price .price {
+  display: inline-block;
+}
+
+.property-price .price span {
+  font-size: 16px;
+  color: #555;
+}
+
+.property-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.property-info .info {
+  display: inline-block;
+}
+
+.property-info .info span {
+  font-size: 16px;
+  color: #555;
+}
+
+.project-info {
+  margin-top: 20px;
+}
+
+.project-info span {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.project-info a {
+  text-decoration: underline;
+  color: #007bff;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Style for links */
+.project-info a:hover {
+  color: #0056b3;
+}
+
+
+/* Form container */
+.book-visit {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form heading */
+.book-visit h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* This aligns the form elements to the top */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px; /* Add margin between form groups */
+}
+
+.form-group:last-child {
+  margin-right: 0; /* Remove margin for the last form group in a row */
+}
+
+/* Form labels */
+.form-group label {
+  font-weight: bold;
+  flex: 1;
+  margin-right: 10px;
+  text-align: right;
+}
+
+/* Form inputs and textareas */
+.form-group input,
+.form-group textarea {
+  flex: 2;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Form submit button */
+.book-visit button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-visit button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+/* property-details */
+
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
